@@ -1,0 +1,21 @@
+name: Afkcoords
+main: me.The_Coder.afkcoords.Main
+author: The_Coder
+version: 0.1
+description: >
+             Displays player's coords when they stand still for too long.
+commands:
+    afk:
+      description: Will set you afk
+    setplayerafk:
+      description: Will set a player of your choice afk
+permissions:
+  afk.notseen:
+    default: op
+    description: Makes a player invisible to the afk radar.
+  afk.setplayerafk:
+    default: op
+    description: Allows a player to set another player afk.
+  afk.command:
+    default: op
+    description: Allows a player to use the command /afk
