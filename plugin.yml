@@ -1,7 +1,7 @@
 name: Afkcoords
 main: me.The_Coder.afkcoords.Main
 author: The_Coder
-version: 0.1
+version: 0.5
 description: >
              Displays player's coords when they stand still for too long.
 commands:
