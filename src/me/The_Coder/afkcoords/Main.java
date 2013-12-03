@@ -26,7 +26,7 @@ import java.util.logging.Logger;
  */
 public class Main extends JavaPlugin {
     Logger logger = Logger.getLogger("Minecraft");
-    PluginDescriptionFile pdfFile = getDescription();
+
 
     private CoordsListener coordsListener = new CoordsListener(this);
     private UpdateChecker update;
@@ -35,11 +35,12 @@ public class Main extends JavaPlugin {
     Map<String, Location> stillplayers = new HashMap<String, Location>();
 
     public void onDisable() {
-
+        PluginDescriptionFile pdfFile = getDescription();
         logger.info(pdfFile.getName() + " is now disabled");
     }
 
     public void onEnable() {
+        PluginDescriptionFile pdfFile = getDescription();
         getServer().getPluginManager().registerEvents(coordsListener , this);
 
 
@@ -110,7 +111,7 @@ public class Main extends JavaPlugin {
                     getServer().broadcastMessage(
                             ChatColor.GRAY + player.getDisplayName() + " has gone AFK");
                 } else {
-                    player.sendMessage("You don't have permission to use this command.");
+                    player.sendMessage(ChatColor.RED + "You don't have permission to use this command.");
                 }
             }
 
@@ -152,7 +153,7 @@ public class Main extends JavaPlugin {
                             " tried to use: /setplayerafk <" +
                             setplayerafk.getDisplayName() + "> " +
                             dateformat.format(date));
-                    player.sendMessage("You don't have permission to use that command.");
+                    player.sendMessage( ChatColor.RED + "You don't have permission to use that command.");
                 }
 
             }

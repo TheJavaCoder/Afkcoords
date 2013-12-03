@@ -39,7 +39,8 @@ public class UpdateChecker {
 
             version = childern.item(1).getTextContent().replaceAll("[a-zA-Z]", "");
             link = childern.item(3).getTextContent();
-            if(!plugin.pdfFile.getVersion().equals(version));
+
+            if(!plugin.getDescription().getVersion().equals(version));
                 return true;
         }catch (Exception e) {
             e.printStackTrace();
