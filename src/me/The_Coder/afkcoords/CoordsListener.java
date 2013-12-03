@@ -11,7 +11,7 @@ import org.bukkit.event.player.PlayerToggleSneakEvent;
 
 
 /**
- * Created by Bailey on 12/3/13.
+ * Created by The_Coder on 12/3/13.
  */
 public class CoordsListener implements Listener {
     public static Main plugin;

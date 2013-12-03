@@ -22,7 +22,7 @@ import java.util.Map;
 import java.util.logging.Logger;
 
 /**
- * Created by Bailey on 12/3/13.
+ * Created by The_Coder on 12/3/13.
  */
 public class Main extends JavaPlugin {
     Logger logger = Logger.getLogger("Minecraft");

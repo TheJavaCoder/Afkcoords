@@ -41,6 +41,8 @@ target/
 /.idea
 /*.iml
 .checkstyle
+out/*
+
 
 # Testfiles
 test.sh

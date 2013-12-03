@@ -11,7 +11,7 @@ import java.net.MalformedURLException;
 import java.net.URL;
 
 /**
- * Created by Bailey on 12/3/13.
+ * Created by The_Coder on 12/3/13.
  */
 public class UpdateChecker {
 
